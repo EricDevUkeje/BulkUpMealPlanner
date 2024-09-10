@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulk Up Meal Planner</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Bulk Up Meal Planner</h1>
+    
+    <div class="input-group">
+        <label for="calorieGoal">Daily Calorie Goal:</label>
+        <input type="number" id="calorieGoal" placeholder="Enter calorie goal">
+    </div>
+    
+    <div class="input-group">
+        <label for="ingredients">Preferred Ingredients:</label>
+        <input type="text" id="ingredients" placeholder="Enter ingredients (comma separated)">
+    </div>
+    
+    <div class="input-group">
+        <label for="mealFrequency">Meal Frequency:</label>
+        <select id="mealFrequency">
+            <option value="3">3 meals</option>
+            <option value="4">4 meals</option>
+            <option value="5">5 meals</option>
+            <option value="6">6 meals</option>
+        </select>
+    </div>
+    
+    <div class="input-group">
+        <label for="duration">Duration (days):</label>
+        <select id="duration">
+            <option value="1">1 day</option>
+            <option value="7">7 days</option>
+            <option value="30">30 days</option>
+        </select>
+    </div>
+    
+    <button onclick="generateMealPlan()">Generate Meal Plan</button>
+    
+    <div id="mealPlan"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
